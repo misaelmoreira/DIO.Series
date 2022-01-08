@@ -34,7 +34,8 @@ namespace DIO.Series
             retorno += "Genero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descricao: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Inicia: " + this.Ano;
+            retorno += "Ano de Inicia: " + this.Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
 
@@ -46,6 +47,11 @@ namespace DIO.Series
         public int retornaId()
         {
             return this.Id;
+        }
+
+        public bool retornaExcluido()
+        {
+            return this.Excluido;
         }
 
         public void Excluir()
